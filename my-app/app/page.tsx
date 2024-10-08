@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
-import Image from "next/image";
 
-export default function Home() {
+const Home = () => {
   return (
    <main className="relative bg-black-100
    flex justify-center flex-col overflow-hidden mx-auto
@@ -13,3 +12,5 @@ export default function Home() {
    </main>
   );
 }
+
+export default Home;

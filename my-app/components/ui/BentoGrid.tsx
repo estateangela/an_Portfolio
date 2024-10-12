@@ -63,7 +63,7 @@ export const BentoGridItem = ({
                 backgroundColor: 'linear-gradient(90deg, rgba(46, 41, 131, 1) 0%, rgba(8, 190, 160, 1) 35%, rgba(0, 212, 255, 1) 100%)', // 修正了背景颜色的语法
             }}
         >
-            <div className={`${id === 6 ? 'flex justify-center h-full' : ''}`}> 
+            <div className={`${id === 6 && 'flex justify-center'} h-full`}> 
                 <div className="w-full h-full absolute">
                     {img && (
                         <img

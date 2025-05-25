@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: '18.18.0'
 
-      - name: Install & Export
+      - name: Install and Build
         run: |
           cd my-app
           npm ci
-          npm run export
+          npm run build
 
       - name: Configure Pages
         uses: actions/configure-pages@v4

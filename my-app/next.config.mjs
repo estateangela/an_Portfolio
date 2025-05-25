@@ -1,11 +1,10 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // ...其他設定
+    // 之前加的跳過 ESLint 設定
     eslint: {
       ignoreDuringBuilds: true,
     },
+    // 其他 NextConfig 你可能有的設定...
   };
   
-  module.exports = nextConfig;
-  
+  export default nextConfig;

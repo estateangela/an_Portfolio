@@ -21,23 +21,19 @@ jobs:
         with:
           node-version: '18.18.0'
 
-      - name: Install dependencies
+      - name: Install & Export
         run: |
           cd my-app
           npm ci
-
-      - name: Build
-        run: |
-          cd my-app
-          npm run build
+          npm run export
 
       - name: Configure Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: my-app/build
+          path: my-app/out
 
       - name: Deploy
         id: deployment
